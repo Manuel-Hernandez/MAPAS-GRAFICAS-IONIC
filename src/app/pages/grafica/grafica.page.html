@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>grafica</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+
+    
+    <div style="display: block;">
+      <canvas baseChart
+        [datasets]="bubbleChartData"
+        [options]="bubbleChartOptions"
+        [colors]="bubbleChartColors"
+        [legend]="bubbleChartLegend"
+        [chartType]="bubbleChartType">
+      </canvas>
+    </div>
+    
+ 
+</ion-content>

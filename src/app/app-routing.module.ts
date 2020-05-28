@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'grafica',
+    loadChildren: () => import('./pages/grafica/grafica.module').then( m => m.GraficaPageModule)
+  },
 ];
 
 @NgModule({
